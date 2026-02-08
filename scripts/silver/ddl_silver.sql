@@ -21,6 +21,7 @@ dwh_create_date DATETIME2 DEFAULT GETDATE()
 --Create prd_info Table
 CREATE TABLE silver.crm_prd_info(
 prd_id INT,
+cat_id NVARCHAR(50),
 prd_key NVARCHAR(50),
 prd_nm NVARCHAR(50),
 prd_cost DECIMAL(10,2),
