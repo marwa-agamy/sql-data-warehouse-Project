@@ -58,4 +58,4 @@ The Gold Layer is the business-level data representation, structured to support 
 | due_date        | DATE          | The date when the order payment was due.                                                      |
 | sales_amount    | DECIMAL(10,2) | Total sales value for the order line, calculated as quantity * price.                         |
 | quantity        | INT           | The number of units of the product ordered for the line item (e.g., 1).                       |
-| price           | DECIMAL(10,2) | The price per unit of the product for the line item, in whole currency units (e.g., 25.00).   |
+| price           | DECIMAL(10,2) | The price per unit of the product for the line item.                                          |
