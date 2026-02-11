@@ -10,7 +10,7 @@ ci.cst_firstname AS first_name,
 ci.cst_lastname AS last_name,
  CASE  WHEN ce.cntry IS NOT NULL THEN ce.cntry
         ELSE 'unknown'
-    END AS country,,
+    END AS country,
 ci.cst_marital_status AS marital_status ,
 CASE WHEN ci.cst_gndr !='unknown' THEN ci.cst_gndr
      ELSE COALESCE(ca.gen,'unknown')
