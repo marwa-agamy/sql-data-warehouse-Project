@@ -8,7 +8,9 @@ ci.cst_id AS customer_id,
 ci.cst_key  AS customer_number,
 ci.cst_firstname AS first_name,
 ci.cst_lastname AS last_name,
-ce.cntry AS country,
+ CASE  WHEN ce.cntry IS NOT NULL THEN ce.cntry
+        ELSE 'unknown'
+    END AS country,,
 ci.cst_marital_status AS marital_status ,
 CASE WHEN ci.cst_gndr !='unknown' THEN ci.cst_gndr
      ELSE COALESCE(ca.gen,'unknown')
